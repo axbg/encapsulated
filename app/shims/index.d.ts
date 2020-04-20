@@ -9,6 +9,7 @@ interface Post {
   slug?: string;
   excerpt?: string;
   content: string;
+  tags: Array<string>;
   publishedAt: string;
   featuredImage?: string;
   seoDescription?: string;

@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-netlifycms",
+  "name": "encapsulated",
   "version": "0.0.1",
-  "description": "Yo",
-  "author": "Gomah",
+  "description": "encapsulated - a tech related blog",
+  "author": "Alex Bisag",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts -o",

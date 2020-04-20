@@ -1,5 +1,5 @@
 <template>
-  <main :class="[$route.name]" class="main px-4 md:px-0">
+  <main :class="[$route.name]" class="h-overflow-hidden main px-4 md:px-0">
     <div class="container mx-auto">
       <site-header />
       <nuxt class="nuxt" />
@@ -36,5 +36,8 @@ export default class DefaultLayout extends Vue {}
 
 .nuxt {
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.h-overflow-hidden {
+  overflow-x: hidden;
 }
 </style>
