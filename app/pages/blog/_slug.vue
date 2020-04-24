@@ -5,7 +5,9 @@
         {{ post.title }}
       </h1>
       <div>
-        <h3 class="text-xs md:text-sm italic">{{ post.tag }} / {{ post.publishedAt }}</h3>
+        <h3 class="text-xs md:text-sm italic">
+          <nuxt-link :to="`/tag/${post.tag}`">{{ post.tag }}</nuxt-link> / {{ post.publishedAt }}
+        </h3>
       </div>
     </div>
 
@@ -22,6 +24,7 @@ import { MetaInfo } from 'vue-meta';
 
 @Component({
   async asyncData({ params, payload }): Promise<{ post: Post }> {
+    console.log(params);
     if (payload) {
       return { post: payload };
     }
