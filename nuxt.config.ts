@@ -86,7 +86,7 @@ const nuxtConfig: Configuration = {
   }]],
 
   purgeCSS: {
-    whitelist: [/.*-(enter|enter-active|enter-to|leave|leave-active|leave-to)/],
+    whitelistPatterns: [/.*-(enter|enter-active|enter-to|leave|leave-active|leave-to)/, /(^|\.)fa-/, /-fa($|\.)/],
   },
 
   markdownit: {
