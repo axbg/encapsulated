@@ -4,11 +4,9 @@
       <site-header />
       <nuxt class="nuxt" />
     </div>
-
-    <svg class="divider -mx-4 sm:mx-0" width="100%" viewBox="0 0 10 1">
-      <polygon stroke="none" stroke-width="0" fill="#0b3765" points="0,0.6 0,1 10,1 10,0" />
+    <svg class="divider -mx-4 sm:mx-0" max-height="100px" width="100%" viewBox="0 0 10 1">
+      <polygon stroke="none" stroke-width="0" fill="#0b3765" points="0,1 0,1 10,1 1,0" />
     </svg>
-
     <site-footer />
   </main>
 </template>

@@ -1,14 +1,17 @@
 <template>
   <article class="post" :class="post.slug">
-    <div class="py-8 md:py-16 text-center mx-auto">
+    <div class="text-center mx-auto">
       <h1 class="text-lg md:text-xl lg:text-4xl xl:text-4xl">
         {{ post.title }}
       </h1>
+      <div>
+        <h3 class="text-xs md:text-sm italic">{{ post.tag }} / {{ post.publishedAt }}</h3>
+      </div>
     </div>
 
     <div
       v-html="$md.render(post.content)"
-      class="post__content markdown pt-4 md:pt-6 md:pb-24 w-full lg:w-8/12 mx-auto"
+      class="post__content markdown pb-6 pt-20 md:pt-25 md:pb-24 w-11/12 lg:w-8/12 mx-auto"
     />
   </article>
 </template>

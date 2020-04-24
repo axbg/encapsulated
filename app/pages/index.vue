@@ -1,6 +1,6 @@
 <template>
   <section class="blog">
-    <div class="py-8 md:py-16 text-center">
+    <div class="py-4 md:py-2 text-center">
       <h1 class="text-xl md:text-xl lg:text-4xl xl:text-4xl">encapsulated</h1>
       <h2 class="text-base md:text-lg lg:text-lg xl:text-lg">
         something about software

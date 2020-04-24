@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Configuration } from '@nuxt/types';
 import fg from 'fast-glob';
 import settings from './app/content/settings/general.json';
@@ -74,7 +75,15 @@ const nuxtConfig: Configuration = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit', ['nuxt-fontawesome', {
+    component: 'fa',
+    imports: [
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['faFacebook', 'faInstagram', 'faLinkedin', 'faGithub']
+      }
+    ]
+  }]],
 
   purgeCSS: {
     whitelist: [/.*-(enter|enter-active|enter-to|leave|leave-active|leave-to)/],

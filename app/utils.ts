@@ -7,7 +7,7 @@ export function createExcerpt({ text, length = 150 }: { text: string; length?: n
 
 export async function getContent({ context, prefix }): Promise<{ slug: string; title: string }[]> {
   const slugs: string[] = [];
-  const content: { slug: string; title: string, image: string }[] = [];
+  const content: { slug: string; title: string, tag: string, image: string }[] = [];
 
   // Get slugs
   for (let index = 0; index < context.keys().length; index += 1) {
@@ -28,6 +28,7 @@ export async function getContent({ context, prefix }): Promise<{ slug: string; t
       slug,
       title: entry.title,
       image: entry.featuredImage,
+      tag: entry.tag,
       ...(prefix === 'blog' && {
         excerpt: createExcerpt({ text: entry.content }),
       }),
