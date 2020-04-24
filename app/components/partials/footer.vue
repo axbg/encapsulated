@@ -16,7 +16,7 @@
         </a>
       </div>
     </div>
-    <div class="text-white text-center p-3 xl:p-5">
+    <div class="text-white text-center pb-1 pt-3 xl:pt-5">
       <a class="text-xs powered-by" href="https://github.com/Gomah/bluise" target="blank">
         Powered by Bluise
       </a>

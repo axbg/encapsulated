@@ -11,10 +11,9 @@
       <div v-for="(post, index) in posts" :key="index" class="w-full md:w-1/3 my-4 md:px-4">
         <div class="post">
           <nuxt-link :to="`/blog/${post.slug}`">
-            <img class="w-full" :src="post.image" />
             <div class="p-6 bg-white">
               <h2 class="text-2xl mb-2">{{ post.title }}</h2>
-
+              <h3 class="tag pb-2">{{ post.tag }}</h3>
               <p class="text-base font-light">
                 {{ post.excerpt }}
               </p>
@@ -62,5 +61,8 @@ export default class BlogIndex extends Vue {
       @apply shadow-xl;
     }
   }
+}
+.tag {
+  color: $bluise;
 }
 </style>
