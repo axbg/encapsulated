@@ -29,7 +29,8 @@
 }
 
 .markdown a {
-  @apply text-blue-600 font-semibold;
+  @apply font-semibold;
+  color: $bluise;
 }
 
 .markdown strong a {

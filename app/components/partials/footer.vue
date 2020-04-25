@@ -59,6 +59,6 @@ export default class Footer extends Vue {
   background-color: $bluise;
 }
 .powered-by:hover {
-  color: $bluise;
+  color: $bluise-original;
 }
 </style>

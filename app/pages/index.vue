@@ -2,7 +2,7 @@
   <section class="blog">
     <div class="py-4 md:py-2 text-center">
       <h1 class="text-xl md:text-xl lg:text-4xl xl:text-4xl">encapsulated</h1>
-      <h2 class="text-base md:text-lg lg:text-lg xl:text-lg">
+      <h2 class="text-base md:text-lg lg:text-lg xl:text-lg background-color">
         something about software
       </h2>
     </div>
@@ -13,12 +13,12 @@
           <nuxt-link :to="`/blog/${post.slug}`">
             <div class="p-6 bg-white">
               <h2 class="text-2xl mb-2">{{ post.title }}</h2>
-              <h3 class="tag pb-2">{{ post.tag }}</h3>
+              <h3 class="pb-2">{{ post.tag }}</h3>
               <p class="text-base font-light">
                 {{ post.excerpt }}
               </p>
 
-              <h6 class="text-blue-600 mt-4 font-medium">Read more</h6>
+              <h6 class="background-color mt-4 font-medium">Read more</h6>
             </div>
           </nuxt-link>
         </div>

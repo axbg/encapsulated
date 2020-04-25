@@ -19,7 +19,7 @@
                 {{ post.excerpt }}
               </p>
 
-              <h6 class="text-blue-600 mt-4 font-medium">Read more</h6>
+              <h6 class="background-color mt-4 font-medium">Read more</h6>
             </div>
           </nuxt-link>
         </div>

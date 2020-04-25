@@ -1,12 +1,13 @@
 <template>
   <article class="post" :class="post.slug">
     <div class="mx-auto max-w-lg text-center break-all">
-      <h1 class="text-3xl lg:text-3xl xl:text-4xl cursor-pointer" @click="scrollTop">
+      <h1 class="text-3xl lg:text-3xl xl:text-4xl cursor-pointer">
         {{ post.title }}
       </h1>
       <div>
-        <h3 class="text-xs md:text-base">
-          <nuxt-link :to="`/tag/${post.tag}`">{{ post.tag }}</nuxt-link> • {{ post.publishedAt }}
+        <h3 class="text-sm md:text-base">
+          <nuxt-link class="background-color" :to="`/tag/${post.tag}`">{{ post.tag }}</nuxt-link> •
+          {{ post.publishedAt }}
         </h3>
       </div>
     </div>
