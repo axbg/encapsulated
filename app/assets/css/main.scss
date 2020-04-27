@@ -1,5 +1,9 @@
 @import 'markdown';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply antialiased;
   @apply subpixel-antialiased;

@@ -14,16 +14,21 @@
 
     <div
       v-html="$md.render(post.content)"
-      class="post__content markdown pb-6 pt-12 md:pb-24 w-12/12 lg:w-1/2 mx-auto text-lg"
+      class="post__content markdown pt-12 w-12/12 lg:w-1/2 mx-auto text-lg"
     />
+    <back-to-top scroll-distance="150" />
   </article>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { MetaInfo } from 'vue-meta';
+import BackToTop from '@/components/partials/back-to-top.vue';
 
 @Component({
+  components: {
+    BackToTop,
+  },
   async asyncData({ params, payload }): Promise<{ post: Post }> {
     if (payload) {
       return { post: payload };
