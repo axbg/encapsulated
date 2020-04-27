@@ -1,9 +1,9 @@
 {
   "title": "something about software",
-  "titleTemplate": "| encapsulated",
+  "titleTemplate": " | encapsulated",
   "logo": "/images/uploads/logo.svg",
   "icon": "/images/uploads/logo.png",
-  "loadingColor": "#0b3765",
-  "seoDescription": "encapsulated | something about software",
-  "seoMetaImage": ""
+  "loadingColor": "#2C7A7B",
+  "seoDescription": "",
+  "seoMetaImage": "/images/uploads/logo.png"
 }

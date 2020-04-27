@@ -52,6 +52,11 @@ import BackToTop from '@/components/partials/back-to-top.vue';
       title: this.page.title,
       meta: [
         {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.page.title + " | encapsulated",
+        },
+        {
           hid: 'description',
           name: 'description',
           content: this.page.seoDescription,
