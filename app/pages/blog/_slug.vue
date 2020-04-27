@@ -1,7 +1,7 @@
 <template>
   <article class="post" :class="post.slug">
     <div class="mx-auto max-w-lg text-center break-all">
-      <h1 class="text-3xl lg:text-3xl xl:text-4xl cursor-pointer">
+      <h1 class="text-3xl lg:text-3xl xl:text-4xl">
         {{ post.title }}
       </h1>
       <div>

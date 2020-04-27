@@ -1,10 +1,15 @@
 <template>
   <section class="page" :class="page.slug">
-    <h1 class="page__title text-lg md:text-xl lg:text-4xl xl:text-4xl text-center py-8 md:py-16">
-      {{ page.title }}
-    </h1>
+    <div class="mx-auto max-w-lg text-center break-all">
+      <h1 class="text-3xl lg:text-3xl xl:text-4xl">
+        {{ page.title }}
+      </h1>
+    </div>
 
-    <div v-html="$md.render(page.content)" class="page__content markdown pt-4 md:pt-6 md:pb-24" />
+    <div
+      v-html="$md.render(page.content)"
+      class="post__content markdown pb-6 pt-4 md:pb-24 w-12/12 lg:w-1/2 mx-auto text-lg"
+    />
   </section>
 </template>
 
