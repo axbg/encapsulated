@@ -2,16 +2,31 @@
   <footer class="footer -mx-4 md:mx-0">
     <div class="container mx-auto flex justify-center">
       <div class="container text-white text-2xl xl:text-3xl w-1/2 lg:w-1/3 flex justify-between">
-        <a href="mailto:bisagalexstefan@gmail.com" title="Gmail" target="blank">
+        <a
+          class="hover:text-red-700"
+          href="mailto:bisagalexstefan@gmail.com"
+          title="Gmail"
+          target="blank"
+        >
           <fa :icon="faGoogle" />
         </a>
-        <a href="https://www.facebook.com/bisagalex/" title="Facebook" target="blank">
+        <a
+          class="hover:text-blue-900"
+          href="https://www.facebook.com/bisagalex/"
+          title="Facebook"
+          target="blank"
+        >
           <fa :icon="faFacebook" />
         </a>
-        <a href="https://github.com/axbg" title="Github" target="blank">
+        <a class="hover:text-black" href="https://github.com/axbg" title="Github" target="blank">
           <fa :icon="faGithub" />
         </a>
-        <a href="https://www.linkedin.com/in/alexbisag/" title="LinkedIn" target="blank">
+        <a
+          class="hover:text-blue-900"
+          href="https://www.linkedin.com/in/alexbisag/"
+          title="LinkedIn"
+          target="blank"
+        >
           <fa :icon="faLinkedin" />
         </a>
       </div>

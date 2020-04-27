@@ -10,15 +10,19 @@
       v-html="$md.render(page.content)"
       class="post__content markdown pb-6 pt-4 md:pb-24 w-12/12 lg:w-1/2 mx-auto text-lg"
     />
+    <back-to-top scroll-distance="150" />
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { MetaInfo } from 'vue-meta';
+import BackToTop from '@/components/partials/back-to-top.vue';
 
 @Component({
-  // Called to know which transition to apply
+  components: {
+    BackToTop,
+  },
   transition(to, from) {
     if (!from) {
       return 'slide-left';
