@@ -9,9 +9,9 @@
 
     <div class="flex flex-wrap md:-mx-4 pb-20">
       <div v-for="(post, index) in posts" :key="index" class="w-full md:w-1/3 my-4 md:px-4">
-        <div class="post">
+        <div class="post md:h-full">
           <nuxt-link :to="`/blog/${post.slug}`">
-            <div class="p-6 bg-white">
+            <div class="p-6 bg-white md:h-full">
               <h2 class="text-2xl mb-2">{{ post.title }}</h2>
               <h3 class="pb-2">{{ post.tag }}</h3>
               <p class="text-base font-light">

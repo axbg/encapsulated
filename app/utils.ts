@@ -16,7 +16,7 @@ export async function getContent({ context, prefix }): Promise<{ slug: string; t
   }
 
   // Get content
-  for (let index = 0; index < slugs.length; index += 1) {
+  for (let index = (slugs.length - 1); index >= 0; index -= 1) {
     const slug = slugs[index];
 
     const entry = require(`@/content/${prefix}/${slug}.json`);
