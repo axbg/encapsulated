@@ -13,6 +13,7 @@
           <nuxt-link :to="`/blog/${post.slug}`">
             <div class="p-6 bg-white md:h-full">
               <h2 class="text-2xl mb-2">{{ post.title }}</h2>
+              <h3 class="pb-2 float-right">{{ post.date }}</h3>
               <h3 class="pb-2">{{ post.tag }}</h3>
               <p class="text-base font-light">
                 {{ post.excerpt }}
