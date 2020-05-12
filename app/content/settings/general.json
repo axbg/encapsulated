@@ -5,5 +5,5 @@
   "icon": "/images/uploads/logo.png",
   "loadingColor": "#2C7A7B",
   "seoDescription": "another tech blog",
-  "seoMetaImage": "/images/uploads/logo.png"
+  "seoMetaImage": "https://encapsulated.dev/images/uploads/logo.png"
 }

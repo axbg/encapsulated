@@ -55,8 +55,8 @@ import BackToTop from '@/components/partials/back-to-top.vue';
           content: `${this.post.title} | encapsulated`,
         },
         {
-          hid: 'description',
-          name: 'description',
+          hid: 'og:description',
+          name: 'og:description',
           content: this.post.seoDescription,
         },
         {
