@@ -24,6 +24,7 @@ collections:
           - { label: 'Title Template', name: titleTemplate, widget: string }
           - { label: 'Welcome Text', name: welcomeText, widget: markdown }
           - { label: Logo, name: logo, widget: image }
+          - { label: HoveredLogo, name: hoveredLogo, widget: image }
           - { label: Icon, name: icon, widget: image }
           - { label: 'Loading Color', name: loadingColor, widget: string, default: '#000000' }
           - { label: 'SEO Description', name: seoDescription, widget: text, required: false }

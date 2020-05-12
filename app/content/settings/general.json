@@ -2,8 +2,9 @@
   "title": "something about software",
   "titleTemplate": " | encapsulated",
   "logo": "/images/uploads/logo.svg",
+  "hoveredLogo": "/images/uploads/hovered-logo.svg",
   "icon": "/images/uploads/logo.png",
   "loadingColor": "#2C7A7B",
   "seoDescription": "another tech blog",
-  "seoMetaImage": "https://encapsulated.dev/images/uploads/logo.png"
+  "seoMetaImage": "https://encapsulated.dev/images/uploads/cover.jpg"
 }

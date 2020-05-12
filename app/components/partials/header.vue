@@ -2,7 +2,14 @@
   <header class="flex items-center py-4 md:py-8">
     <div class="header__logo">
       <nuxt-link to="/">
-        <img :src="logo" alt="encapsulated-logo" title="encapsulated" />
+        <img
+          class="enc-logo"
+          :src="logo"
+          @mouseover="hoverLogo(true)"
+          @mouseleave="hoverLogo(false)"
+          alt="encapsulated-logo"
+          title="encapsulated"
+        />
       </nuxt-link>
     </div>
 
@@ -28,6 +35,10 @@ import settings from '@/content/settings/general.json';
 export default class Header extends Vue {
   get pages(): Page[] {
     return this.$store.state.pages;
+  }
+
+  hoverLogo(hovered: boolean): void {
+    this.logo = hovered ? settings.hoveredLogo : settings.logo;
   }
 
   logo = settings.logo;
