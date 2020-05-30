@@ -36,5 +36,7 @@ export async function getContent({ context, prefix }): Promise<{ slug: string; t
     });
   }
 
+  content.sort((a, b) => b.title > a.title ? 1 : -1);
+
   return content;
 }
