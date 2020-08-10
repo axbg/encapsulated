@@ -1,7 +1,9 @@
 <template>
   <footer class="footer -mx-4 md:mx-0">
     <div class="container mx-auto flex justify-center">
-      <div class="container text-white text-2xl xl:text-3xl w-1/2 lg:w-1/3 flex justify-between">
+      <div
+        class="container centered-container text-white text-2xl xl:text-3xl w-2/3 lg:w-1/3 flex justify-between"
+      >
         <a
           class="hover:text-red-700"
           href="mailto:bisagalexstefan@gmail.com"
@@ -17,6 +19,9 @@
           target="blank"
         >
           <fa :icon="faFacebook" />
+        </a>
+        <a class="transitioned" href="https://shadowed.photo" title="shadowed" target="blank">
+          <img src="/shadowed.png" alt="shadowed" />
         </a>
         <a class="hover:text-black" href="https://github.com/axbg" title="Github" target="blank">
           <fa :icon="faGithub" />
@@ -70,10 +75,19 @@ export default class Footer extends Vue {
 </script>
 
 <style lang="scss">
+.centered-container {
+  align-items: center;
+}
 .footer {
   background-color: $bluise;
 }
 .powered-by:hover {
   color: $bluise-original;
+}
+.transitioned {
+  transition: all 0.5s ease;
+}
+.transitioned:hover {
+  filter: invert(100%);
 }
 </style>

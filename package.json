@@ -11,7 +11,8 @@
     "generate": "nuxt-ts generate",
     "test:lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore app/",
     "test:unit": "cross-env BABEL_ENV=test jest --coverage",
-    "test": "npm run test:lint"
+    "test": "npm run test:lint",
+    "lint": "eslint --ext .vue . --fix"
   },
   "config": {
     "nuxt": {
@@ -66,10 +67,10 @@
     "jest": "^25.1.0",
     "jest-serializer-vue": "^2.0.2",
     "jest-static-stubs": "0.0.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
     "ts-jest": "^25.0.0",
-    "vue-jest": "^4.0.0-beta.2"
+    "vue-jest": "^4.0.0-beta.5"
   }
 }
