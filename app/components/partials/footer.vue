@@ -21,7 +21,7 @@
           <fa :icon="faFacebook" />
         </a>
         <a class="transitioned" href="https://shadowed.photo" title="shadowed" target="blank">
-          <img src="/shadowed.png" alt="shadowed" />
+          <img src="/images/shadowed.png" alt="shadowed" />
         </a>
         <a class="hover:text-black" href="https://github.com/axbg" title="Github" target="blank">
           <fa :icon="faGithub" />

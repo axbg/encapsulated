@@ -1,10 +1,10 @@
 {
   "title": "something about software",
   "titleTemplate": " | encapsulated",
-  "logo": "/images/uploads/logo.svg",
-  "hoveredLogo": "/images/uploads/hovered-logo.svg",
-  "icon": "/images/uploads/logo.png",
+  "logo": "/images/logo.svg",
+  "hoveredLogo": "/images/hovered-logo.svg",
+  "icon": "/images/logo.png",
   "loadingColor": "#2C7A7B",
   "seoDescription": "another tech blog",
-  "seoMetaImage": "https://encapsulated.dev/images/uploads/cover.jpg"
+  "seoMetaImage": "https://encapsulated.dev/images/cover.jpg"
 }
