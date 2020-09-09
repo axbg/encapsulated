@@ -14,11 +14,11 @@
         </a>
         <a
           class="hover:text-blue-900"
-          href="https://www.facebook.com/bisagalex/"
+          href="https://www.messenger.com/t/bisagalex"
           title="Facebook"
           target="blank"
         >
-          <fa :icon="faFacebook" />
+          <fa :icon="faFacebookMessenger" />
         </a>
         <a class="transitioned" href="https://shadowed.photo" title="shadowed" target="blank">
           <img src="/images/shadowed.png" alt="shadowed" />
@@ -47,7 +47,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import {
-  faFacebook,
+  faFacebookMessenger,
   faGoogle,
   faLinkedin,
   faGithub,
@@ -56,8 +56,8 @@ import {
 
 @Component
 export default class Footer extends Vue {
-  get faFacebook(): IconDefinition {
-    return faFacebook;
+  get faFacebookMessenger(): IconDefinition {
+    return faFacebookMessenger;
   }
 
   get faGoogle(): IconDefinition {

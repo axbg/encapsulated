@@ -80,7 +80,7 @@ const nuxtConfig: Configuration = {
     imports: [
       {
         set: '@fortawesome/free-brands-svg-icons',
-        icons: ['faFacebook', 'faInstagram', 'faLinkedin', 'faGithub']
+        icons: ['faFacebookMessenger', 'faInstagram', 'faLinkedin', 'faGithub']
       }
     ]
   }]],
