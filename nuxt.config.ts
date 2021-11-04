@@ -39,6 +39,7 @@ const nuxtConfig: Configuration = {
       },
     ],
   },
+  target: 'static',
 
   srcDir: 'app/',
 

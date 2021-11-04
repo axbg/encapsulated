@@ -49,7 +49,7 @@ import { MetaInfo } from 'vue-meta';
 export default class BlogIndex extends Vue {
   get posts(): Post[] {
     const { tag } = this.$route.params;
-    const posts: Post[] = this.$store.state.posts.filter(post => {
+    const posts: Post[] = this.$store.state.posts.filter((post) => {
       return post.tag === tag;
     });
 

@@ -2,7 +2,16 @@
   <footer class="footer -mx-4 md:mx-0">
     <div class="container mx-auto flex justify-center">
       <div
-        class="container centered-container text-white text-2xl xl:text-3xl w-2/3 lg:w-1/3 flex justify-between"
+        class="
+          container
+          centered-container
+          text-white text-2xl
+          xl:text-3xl
+          w-2/3
+          lg:w-1/3
+          flex
+          justify-between
+        "
       >
         <a
           class="hover:text-red-700"

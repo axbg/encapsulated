@@ -1,7 +1,11 @@
 module.exports = {
   root: true,
+  parser: "vue-eslint-parser",
   parserOptions: {
-    parser: '@typescript-eslint/parser',
+    project: "./tsconfig.json",
+    "parser": "@typescript-eslint/parser",
+    sourceType: "module",
+    extraFileExtensions: [".vue"]
   },
   env: {
     browser: true,
@@ -13,10 +17,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/strongly-recommended',
     'prettier',
-    'prettier/vue',
-    'prettier/@typescript-eslint',
   ],
-  plugins: ['@typescript-eslint', 'prettier', 'vue'],
+  plugins: ['@typescript-eslint', 'prettier', 'vue', 'import'],
   // add your custom rules here
   rules: {
     'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'es5', printWidth: 100 }],
