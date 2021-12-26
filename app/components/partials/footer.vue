@@ -29,7 +29,7 @@
         >
           <fa :icon="faFacebookMessenger" />
         </a>
-        <a class="transitioned" href="https://shadowed.photo" title="shadowed" target="blank">
+        <a class="transitioned" href="https://shadowed.digital" title="shadowed" target="blank">
           <img src="/images/shadowed.png" alt="shadowed" />
         </a>
         <a class="hover:text-black" href="https://github.com/axbg" title="Github" target="blank">
