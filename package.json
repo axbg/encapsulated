@@ -33,7 +33,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.2.1",
     "fast-glob": "^3.2.11",
-    "nuxt": "^2.15.8",
+    "nuxt": "^3.13.2",
     "nuxt-fontawesome": "^0.4.0",
     "ts-node": "^10.7.0",
     "vue-class-component": "^7.2.6",
