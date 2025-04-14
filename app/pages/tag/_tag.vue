@@ -14,7 +14,6 @@
             <img class="w-full" :src="post.image" />
             <div class="p-6 bg-white md:h-full">
               <h2 class="text-2xl mb-2">{{ post.title }}</h2>
-              <h3 class="pb-2">{{ post.date }}</h3>
               <p class="text-base font-light">
                 {{ post.excerpt }}
               </p>

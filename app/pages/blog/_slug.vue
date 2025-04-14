@@ -6,8 +6,7 @@
       </h1>
       <div>
         <h3 class="text-sm md:text-base">
-          <nuxt-link class="background-color" :to="`/tag/${post.tag}`">{{ post.tag }}</nuxt-link> •
-          {{ post.publishedAt }}
+          <nuxt-link class="background-color" :to="`/tag/${post.tag}`">{{ post.tag }}</nuxt-link>
         </h3>
       </div>
     </div>

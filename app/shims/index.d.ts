@@ -10,7 +10,6 @@ interface Post {
   excerpt?: string;
   content: string;
   tag: string;
-  publishedAt: string;
   featuredImage?: string;
   seoDescription?: string;
   seoMetaImage?: string;
