@@ -3,6 +3,7 @@ import { Configuration } from '@nuxt/types';
 import fg from 'fast-glob';
 import settings from './app/content/settings/general.json';
 import manifest from './app/content/settings/manifest.json';
+import { FeedOptions, generateFeed } from './app/feed';
 
 const nuxtConfig: Configuration = {
   /*
@@ -87,8 +88,8 @@ const nuxtConfig: Configuration = {
   }]],
 
   purgeCSS: {
-    whitelistPatterns: [/.*-(enter|enter-active|enter-to|leave|leave-active|leave-to|)/, /(^|\.)fa-/, /-fa($|\.)/, /round-image/, /w-32/, /h-32/, 
-    /pre/],
+    whitelistPatterns: [/.*-(enter|enter-active|enter-to|leave|leave-active|leave-to|)/, /(^|\.)fa-/, /-fa($|\.)/, /round-image/, /w-32/, /h-32/,
+      /pre/],
   },
 
   markdownit: {
@@ -153,6 +154,20 @@ const nuxtConfig: Configuration = {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
   ],
+
+  hooks: {
+    'build:before': async () => {
+      const feedOptions: FeedOptions = {
+        title: 'encapsulated',
+        description: 'something about software',
+        feed_url: 'https://blog.axbg.space/feed.xml',
+        site_url: 'https://blog.axbg.space',
+        language: 'en',
+      };
+
+      await generateFeed(feedOptions);
+    }
+  },
 
   build: {
     html: {

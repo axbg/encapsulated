@@ -13,6 +13,7 @@ dist
 # Ignore generated service workers
 app/static/sw.js
 app/static/workbox-sw.prod*
+app/static/feed.xml
 
 # yarn
 yarn-error.log
