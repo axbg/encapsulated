@@ -22,6 +22,9 @@
         >
           <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
         </li>
+        <li class="block font-medium px-4 py-1 md:p-2 lg:px-4">
+          <a href="/feed.xml" target="_blank">rss feed</a>
+        </li>
       </ul>
     </nav>
   </header>
