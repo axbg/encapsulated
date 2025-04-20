@@ -52,7 +52,10 @@ const nuxtConfig: Configuration = {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/main.scss'],
+  css: [
+    '@/assets/css/main.scss',
+    '../node_modules/highlight.js/styles/vs.css'
+  ],
 
   styleResources: {
     scss: ['~assets/css/_variables.scss', '~assets/css/_mixins.scss'],
@@ -105,6 +108,8 @@ const nuxtConfig: Configuration = {
 
     // Enable some language-neutral replacement + quotes beautification
     typographer: true,
+
+    use: ["markdown-it-highlightjs"]
   },
 
   workbox: {
