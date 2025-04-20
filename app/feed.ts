@@ -18,7 +18,7 @@ export async function generateFeed(feedOptions: FeedOptions) {
   const contentPath = "./app/content/blog";
 
   fs.readdir(contentPath, async (_err, filenames) => {
-    filenames.map(filename => {
+    filenames.reverse().map(filename => {
       const filePath = path.join(contentPath, filename);
 
       const fileContent = fs.readFileSync(filePath);
