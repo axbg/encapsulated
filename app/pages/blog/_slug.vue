@@ -51,7 +51,7 @@ import BackToTop from '@/components/partials/back-to-top.vue';
         {
           hid: 'og:title',
           name: 'og:title',
-          content: `${this.post.title} | encapsulated`,
+          content: `${this.post.title.split("- ")[1]} | encapsulated`,
         },
         {
           hid: 'og:description',
